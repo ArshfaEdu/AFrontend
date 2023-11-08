@@ -28,6 +28,15 @@
   border-radius: 50px;
   align-items: center;
 }
+.app-layout
+  > header
+  nav
+  > .container-fluid
+  > .navbar-nav
+  .nav-item:last-child
+  .nav-link:hover {
+  opacity: 0.8;
+}
 
 /* ==== header style for course content page === */
 main.academy-contents-show > div > header {
