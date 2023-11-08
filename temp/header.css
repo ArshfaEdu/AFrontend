@@ -1,0 +1,30 @@
+.app-layout > header {
+  border: none !important;
+}
+.app-layout > header nav .navbar-brand img.navbar-brand-img {
+  width: 100%;
+  max-width: 90px;
+  margin-left: 1.5rem;
+}
+
+.app-layout > header nav .navbar-nav .nav-link {
+  padding: 0.3rem 1rem !important;
+}
+
+.app-layout > header nav > .container-fluid > .navbar-nav {
+  align-items: center;
+}
+
+/* For designing the login button */
+.app-layout
+  > header
+  nav
+  > .container-fluid
+  > .navbar-nav
+  .nav-item:last-child
+  .nav-link {
+  background-color: #052237;
+  color: white;
+  border-radius: 50px;
+  align-items: center;
+}
