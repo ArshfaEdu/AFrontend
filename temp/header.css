@@ -45,6 +45,14 @@ main.academy-contents-show > div > header > div > div {
 main.academy-contents-show > div > header > div > div > div {
   margin-right: 0.75rem !important;
 }
+
+main.academy-contents-show > div > header > div > div > div a {
+  background-color: #052237;
+  color: white;
+  border-radius: 50px;
+  align-items: center;
+}
+
 main.academy-contents-show > div > header > div > div > div h3 {
   position: relative;
   overflow: visible;
