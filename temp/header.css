@@ -28,3 +28,37 @@
   border-radius: 50px;
   align-items: center;
 }
+
+/* ==== header style for course content page === */
+main.academy-contents-show > div > header {
+  z-index: 4;
+  border-bottom: 4px solid var(--bs-gray-200) !important;
+  height: initial;
+}
+main.academy-contents-show > div > header .navbar-brand-img {
+  width: 96px;
+}
+
+main.academy-contents-show > div > header > div > div {
+  justify-content: space-between;
+}
+main.academy-contents-show > div > header > div > div > div {
+  margin-right: 0.75rem !important;
+}
+main.academy-contents-show > div > header > div > div > div h3 {
+  position: relative;
+  overflow: visible;
+  padding-right: 6%;
+  font-weight: 600;
+  white-space: nowrap;
+}
+main.academy-contents-show > div > header > div > div > div h3::before {
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: var(--ar-primary);
+  background: var(--ar-gradient);
+  border-radius: 10px;
+  position: absolute;
+  right: -10%;
+}
