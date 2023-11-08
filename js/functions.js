@@ -141,6 +141,19 @@ function cards() {
   });
 }
 
+function header() {
+  const header = document.querySelector(".app-layout > header");
+  if (!header) {
+    return;
+  }
+
+  window.addEventListener("scroll", function () {
+    if (this.window.scrollY > 50) {
+      header.style.pos;
+    }
+  });
+}
+
 function headerLinks() {
   if (!document.querySelector(".app-layout > header")) {
     return;

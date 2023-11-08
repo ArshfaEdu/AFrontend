@@ -1,5 +1,6 @@
 .app-layout > header {
   border: none !important;
+  position: static !important;
 }
 .app-layout > header nav .navbar-brand img.navbar-brand-img {
   width: 100%;
@@ -15,6 +16,10 @@
   align-items: center;
 }
 
+.app-layout > header nav .navbar-toggler {
+  color: #052237 !important;
+  background-color: transparent !important;
+}
 /* For designing the login button */
 .app-layout
   > header
