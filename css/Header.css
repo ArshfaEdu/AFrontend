@@ -1,0 +1,92 @@
+.app-layout > header {
+  border: none !important;
+  position: static !important;
+}
+.app-layout > header nav .navbar-brand img.navbar-brand-img {
+  width: 100%;
+  max-width: 90px;
+  margin-left: 1.5rem;
+}
+
+.app-layout > header nav .navbar-nav .nav-link {
+  padding: 0.3rem 1rem !important;
+}
+
+.app-layout > header nav > .container-fluid > .navbar-nav {
+  align-items: center;
+}
+
+.app-layout > header nav .navbar-toggler {
+  color: #052237 !important;
+  background-color: transparent !important;
+}
+/* For designing the login button */
+.app-layout
+  > header
+  nav
+  > .container-fluid
+  > .navbar-nav
+  .nav-item:last-child
+  .nav-link {
+  background-color: #052237;
+  color: white;
+  border-radius: 50px;
+  align-items: center;
+}
+.app-layout
+  > header
+  nav
+  > .container-fluid
+  > .navbar-nav
+  .nav-item:last-child
+  .nav-link:hover {
+  opacity: 0.8;
+}
+
+/* ==== header style for course content page === */
+main.academy-contents-show > div > header {
+  z-index: 4;
+  border-bottom: 4px solid var(--bs-gray-200) !important;
+  height: initial;
+}
+main.academy-contents-show > div > header .navbar-brand-img {
+  width: 96px;
+}
+
+main.academy-contents-show > div > header > div > div {
+  justify-content: space-between;
+}
+main.academy-contents-show > div > header > div > div > div {
+  margin-right: 0.75rem !important;
+}
+
+main.academy-contents-show > div > header > div > div > div a {
+  background-color: #052237;
+  color: white;
+  border-radius: 50px;
+  align-items: center;
+  padding-top: 0.45rem !important;
+  padding-bottom: 0.45rem !important;
+}
+main.academy-contents-show > div > header > div > div > div a:hover {
+  color: white !important;
+  opacity: 0.8;
+}
+
+main.academy-contents-show > div > header > div > div > div h3 {
+  position: relative;
+  overflow: visible;
+  padding-right: 6%;
+  font-weight: 600;
+  white-space: nowrap;
+}
+main.academy-contents-show > div > header > div > div > div h3::before {
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: var(--ar-primary);
+  background: var(--ar-gradient);
+  border-radius: 10px;
+  position: absolute;
+  right: -10%;
+}
