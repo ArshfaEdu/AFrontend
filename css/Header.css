@@ -1,6 +1,7 @@
 .app-layout > header {
   border: none !important;
-  position: static !important;
+  /* position: static !important; */
+  box-shadow: 0 5px 30px rgba(100, 100, 100, 0.07);
 }
 .app-layout > header nav .navbar-brand img.navbar-brand-img {
   width: 100%;
