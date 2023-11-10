@@ -18,7 +18,7 @@
 }
 
 .app-layout > header nav .navbar-toggler {
-  color: #052237 !important;
+  color: #092237 !important;
   background-color: transparent !important;
 }
 /* For designing the login button */
@@ -29,7 +29,7 @@
   > .navbar-nav
   .nav-item:last-child
   .nav-link {
-  background-color: #052237;
+  background-color: #092238;
   color: white;
   border-radius: 50px;
   align-items: center;
@@ -62,7 +62,7 @@ main.academy-contents-show > div > header > div > div > div {
 }
 
 main.academy-contents-show > div > header > div > div > div a {
-  background-color: #052237;
+  background-color: #092237;
   color: white;
   border-radius: 50px;
   align-items: center;
