@@ -122,6 +122,49 @@ a:hover {
   background-color: #0a2237;
   color: white;
 }
+.text-largest {
+  font-size: 3rem;
+}
+
+.text-larger {
+  font-size: 2rem;
+}
+
+.text-large {
+  font-size: 1.5rem;
+}
+
+.text-normal {
+  font-size: 1rem;
+}
+
+.text-bold {
+  font-weight: 900;
+}
+
+.text-semibold {
+  font-weight: 500;
+}
+
+#bold {
+  font-weight: 900;
+}
+
+.text-blue {
+  color: #4493d0;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-grey {
+  color: #7b8994;
+}
+
+.align-right {
+  text-align: right;
+}
 
 .btn-1:active {
   box-shadow: none;
