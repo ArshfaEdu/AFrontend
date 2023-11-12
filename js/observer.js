@@ -23,7 +23,8 @@ const observer = new MutationObserver((mutations, observer) =>
 
     let pageName = getPageName(location.pathname);
 
-    tryCatch(header)
+    tryCatch(header);
+    tryCatch(toggleBulma);
     
     // check the activatibility of header link
     tryCatch(headerLinks);
