@@ -97,39 +97,6 @@ a:hover {
   border-color: var(--ar-gradient);
 }
 
-.container {
-  font-family: "Tajawal" !important;
-  font-size: medium !important;
-  font-weight: 400 !important;
-}
-
-.remove-right-left-padding {
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
-}
-
-.tajawal {
-  font-family: "Tajawal" !important;
-}
-
-.btn-1 {
-  border: 1px solid #0a2237;
-  padding: 0;
-  margin: 0;
-}
-
-.dark-blue {
-  background-color: #0a2237;
-  color: white;
-}
-.text-largest {
-  font-size: 3rem;
-}
-
-.text-larger {
-  font-size: 2rem;
-}
-
 .text-large {
   font-size: 1.5rem;
 }
@@ -142,18 +109,6 @@ a:hover {
   font-weight: 900;
 }
 
-.text-semibold {
-  font-weight: 500;
-}
-
-#bold {
-  font-weight: 900;
-}
-
-.text-blue {
-  color: #4493d0;
-}
-
 .text-white {
   color: #fff;
 }
@@ -162,43 +117,329 @@ a:hover {
   color: #7b8994;
 }
 
-.align-right {
-  text-align: right;
-}
-
-.btn-1:active {
-  box-shadow: none;
-  color: white;
-}
-
-.btn-2 {
-  background-color: #0a2237;
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.btn-2:hover {
-  box-shadow: none;
-}
-
-.btn-2:active {
-  box-shadow: none;
-}
-
-#start-icon {
-  margin: 0;
-  padding: 0;
-  /* generate color from here https://isotropic.co/tool/hex-color-to-css-filter/ */
-  filter: invert(100%) sepia(71%) saturate(2%) hue-rotate(28deg)
-    brightness(112%) contrast(101%);
-}
 .img-layout {
   width: 70%;
   height: 70%;
   max-width: 70%;
   max-height: 70%;
   object-fit: contain;
+}
+.button:focus:not(:active),
+.button.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
+}
+
+.button.is-white:focus:not(:active),
+.button.is-white.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25);
+}
+
+.button.is-black:focus:not(:active),
+.button.is-black.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25);
+}
+
+.button.is-light:focus:not(:active),
+.button.is-light.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25);
+}
+
+.button.is-dark:focus:not(:active),
+.button.is-dark.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25);
+}
+
+.button.is-primary:focus:not(:active),
+.button.is-primary.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25);
+}
+
+.button.is-link:focus:not(:active),
+.button.is-link.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
+}
+
+.button.is-info:focus:not(:active),
+.button.is-info.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(62, 142, 208, 0.25);
+}
+
+.button.is-success:focus:not(:active),
+.button.is-success.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(72, 199, 142, 0.25);
+}
+
+.button.is-warning:focus:not(:active),
+.button.is-warning.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(255, 224, 138, 0.25);
+}
+
+.button.is-danger:focus:not(:active),
+.button.is-danger.is-focused:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(241, 70, 104, 0.25);
+}
+
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.icon.is-large {
+  height: 3rem;
+  width: 3rem;
+}
+
+/* Bulma Form */
+
+.select.is-white:not(:hover)::after {
+  border-color: white;
+}
+
+.select.is-black:not(:hover)::after {
+  border-color: #0a0a0a;
+}
+
+.select.is-light:not(:hover)::after {
+  border-color: whitesmoke;
+}
+
+.select.is-dark:not(:hover)::after {
+  border-color: #363636;
+}
+
+.select.is-primary:not(:hover)::after {
+  border-color: #00d1b2;
+}
+
+.select.is-link:not(:hover)::after {
+  border-color: #485fc7;
+}
+
+.select.is-info:not(:hover)::after {
+  border-color: #3e8ed0;
+}
+
+.select.is-success:not(:hover)::after {
+  border-color: #48c78e;
+}
+
+.select.is-warning:not(:hover)::after {
+  border-color: #ffe08a;
+}
+
+.select.is-danger:not(:hover)::after {
+  border-color: #f14668;
+}
+
+/* Bulma Components */
+
+@media screen and (min-width: 1024px) {
+  a.navbar-item.is-active:not(:focus):not(:hover),
+  .navbar-link.is-active:not(:focus):not(:hover) {
+    background-color: transparent;
+  }
+}
+
+/* Bulma Grid */
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .column.is-1-mobile {
+    flex: none;
+    width: 8.33333%;
+  }
+}
+
+@media screen and (min-width: 769px), print {
+  .column.is-one-quarter {
+    flex: none;
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .column.is-5-desktop {
+    flex: none;
+    width: 41.66667%;
+  }
+}
+
+.columns {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  margin-top: -0.75rem;
+}
+
+.columns:last-child {
+  margin-bottom: -0.75rem;
+}
+
+.columns:not(:last-child) {
+  margin-bottom: calc(1.5rem - 0.75rem);
+}
+
+.columns.is-centered {
+  justify-content: center;
+}
+
+.columns.is-multiline {
+  flex-wrap: wrap;
+}
+
+.columns.is-vcentered {
+  align-items: center;
+}
+
+@media screen and (min-width: 769px), print {
+  .columns:not(.is-desktop) {
+    display: flex;
+  }
+}
+
+.columns.is-variable {
+  --columnGap: 0.75rem;
+  margin-left: calc(-1 * var(--columnGap));
+  margin-right: calc(-1 * var(--columnGap));
+}
+
+.columns.is-variable > .column {
+  padding-left: var(--columnGap);
+  padding-right: var(--columnGap);
+}
+
+@media screen and (max-width: 768px) {
+  .columns.is-variable.is-1-mobile {
+    --columnGap: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 769px), print {
+  .columns.is-variable.is-1-tablet {
+    --columnGap: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .columns.is-variable.is-1-desktop {
+    --columnGap: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .columns.is-variable.is-1-widescreen {
+    --columnGap: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 1408px) {
+  .columns.is-variable.is-1-fullhd {
+    --columnGap: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .columns.is-variable.is-2-mobile {
+    --columnGap: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .columns.is-variable.is-3-desktop {
+    --columnGap: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .columns.is-variable.is-8-widescreen {
+    --columnGap: 2rem;
+  }
+}
+
+/* Bulma Helpers */
+
+.is-justify-content-right {
+  justify-content: right !important;
+}
+
+/* Bulma Layout */
+
+.hero.is-white
+  a:not(.button):not(.dropdown-item):not(.tag):not(
+    .pagination-link.is-current
+  ) {
+  color: inherit;
+}
+
+.hero.is-black
+  a:not(.button):not(.dropdown-item):not(.tag):not(
+    .pagination-link.is-current
+  ) {
+  color: inherit;
+}
+
+.hero.is-light
+  a:not(.button):not(.dropdown-item):not(.tag):not(
+    .pagination-link.is-current
+  ) {
+  color: inherit;
+}
+
+.hero.is-dark
+  a:not(.button):not(.dropdown-item):not(.tag):not(
+    .pagination-link.is-current
+  ) {
+  color: inherit;
+}
+
+.hero.is-primary
+  a:not(.button):not(.dropdown-item):not(.tag):not(
+    .pagination-link.is-current
+  ) {
+  color: inherit;
+}
+
+.hero.is-link
+  a:not(.button):not(.dropdown-item):not(.tag):not(
+    .pagination-link.is-current
+  ) {
+  color: inherit;
+}
+
+.hero.is-info
+  a:not(.button):not(.dropdown-item):not(.tag):not(
+    .pagination-link.is-current
+  ) {
+  color: inherit;
+}
+
+.hero.is-success
+  a:not(.button):not(.dropdown-item):not(.tag):not(
+    .pagination-link.is-current
+  ) {
+  color: inherit;
+}
+
+.hero.is-warning
+  a:not(.button):not(.dropdown-item):not(.tag):not(
+    .pagination-link.is-current
+  ) {
+  color: inherit;
+}
+
+.hero.is-danger
+  a:not(.button):not(.dropdown-item):not(.tag):not(
+    .pagination-link.is-current
+  ) {
+  color: inherit;
 }
 /* === End Of Abdussamad edits === */
 
