@@ -16,3 +16,36 @@ footer.footer nav.nav {
 footer * {
   color: #ffffff !important;
 }
+
+.footer .logo-container {
+  display: flex;
+  justify-content: center;
+  /* Center logos horizontally */
+  flex-wrap: wrap;
+  /* Allow logos to wrap on smaller screens */
+  gap: 10px;
+  /* Spacing between logos */
+}
+
+/* Logo styling */
+.footer .logo-container .icon {
+  flex: 0 1 auto;
+  /* Flex item can grow and shrink but respects its initial size */
+  margin: 5px;
+  /* Margin around each logo */
+}
+
+/* Ensure logos maintain a consistent size */
+.footer .logo-container .icon img {
+  width: 50px;
+  /* Adjust as needed */
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer .logo-container {
+    justify-content: space-around;
+    /* Distribute logos evenly on smaller screens */
+  }
+}
