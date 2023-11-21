@@ -296,3 +296,43 @@ footer.footer.bg-white {
   /* top | right | bottom | left */
   padding: 5rem !important;
 }
+
+footer.footer {
+    background-color: #0A2237;
+    padding: 5rem;
+}
+
+.footer .logo-container {
+    display: flex;
+    justify-content: center;
+    /* Center logos horizontally */
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer .logo-container .icon {
+    flex: 0 1 auto;
+    margin: 5px;
+    width: 50px;
+    /* Adjust width as needed */
+    height: auto;
+}
+
+/* Responsive adjustments for mobile layout */
+@media (max-width: 768px) {
+    .footer .logo-container {
+        justify-content: space-around;
+        /* Evenly space icons */
+    }
+
+    .footer .logo-container .icon {
+        flex: 0 1 33%;
+        /* Allow each icon to take up roughly one-third of the container's width */
+        width: auto;
+        /* Reset width to be auto */
+        max-width: 60px;
+        /* Adjust max-width to control the size */
+        height: auto;
+    }
+}
+
