@@ -33,7 +33,7 @@ body {
 }
 
 .btn-2 {
-  background-color: #0a2237;
+  background-color: #0a2237 !important;
   border: none;
   padding: 0;
   margin: 0;
@@ -152,6 +152,7 @@ body {
   display: inline-block;
   font-family: "Tajawal";
   text-align: start;
+  transition: margin-bottom 0.7s ease;
 }
 
 /* Style the button that triggers the dropdown */
@@ -163,7 +164,6 @@ body {
   width: 60rem;
   padding: 1rem;
   text-align: center;
-  /* margin: 0.5rem 1rem; */
   cursor: pointer;
   text-align: start;
   font-family: "Tajawal";
@@ -171,7 +171,12 @@ body {
 
 /* Style the dropdown content */
 .dropdown .dropdown-content {
-  display: none;
+  display: block;
+  opacity: 0;
+  /* Initial state is invisible */
+  visibility: hidden;
+  /* Hide the content initially */
+  transition: opacity 0.8s ease, visibility 0.8s;
   background-color: #e0f4f2;
   right: 0;
   z-index: 1;
@@ -185,38 +190,24 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .dropdown button {
-    width: 40rem;
-  }
-
+  .dropdown button,
   .dropdown .dropdown-content {
     width: 40rem;
   }
 
   .dropdown .dropdown-content div {
     border-radius: 1rem;
-  }
-
-  .dropdown:hover {
-    margin-bottom: 1rem;
   }
 }
 
 @media (max-width: 768px) {
-  .dropdown button {
-    width: 30rem;
-  }
-
+  .dropdown button,
   .dropdown .dropdown-content {
     width: 30rem;
   }
 
   .dropdown .dropdown-content div {
     border-radius: 1rem;
-  }
-
-  .dropdown:hover {
-    margin-bottom: 1rem;
   }
 }
 
@@ -230,6 +221,10 @@ body {
 /* Show the dropdown content when the button is hovered */
 .dropdown:hover .dropdown-content {
   display: block;
+  opacity: 1;
+  /* Make it visible */
+  visibility: visible;
+  /* Show the content */
 }
 
 .dropdown:hover {

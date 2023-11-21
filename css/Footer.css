@@ -48,4 +48,14 @@ footer * {
     justify-content: space-around;
     /* Distribute logos evenly on smaller screens */
   }
+
+  .footer .logo-container .icon {
+    flex: 0 1 33%;
+    /* Allow each icon to take up roughly one-third of the container's width */
+    width: auto;
+    /* Reset width to be auto */
+    max-width: 60px;
+    /* Adjust max-width to control the size */
+    height: auto;
+  }
 }
