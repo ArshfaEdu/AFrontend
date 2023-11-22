@@ -147,8 +147,8 @@ function header() {
   }
 
   window.addEventListener("scroll", function () {
-    if (this.window.scrollY > 50) {
-      //header.style.pos;
+    if (this.window.scrollY > 5) {
+      header.style.boxShadow = "0 5px 30px rgba(100, 100, 100, 0.07)";
     }
   });
 }
