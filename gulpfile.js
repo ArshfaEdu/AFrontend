@@ -4,7 +4,11 @@ const minifyJS = require("gulp-uglify");
 const concat = require("gulp-concat");
 
 const bundleCSS = () => {
-  return src(["./css/**/main.css", "./css/**/!(main).css"])
+  return src([
+    "./css/**/main.css",
+    "./css/**/BulmaCSS.css",
+    "./css/**/!(main|BulmaCSS).css",
+  ])
     .pipe(minifyCSS())
     .pipe(concat("arshfa.min.css"))
     .pipe(dest("./dist"));
