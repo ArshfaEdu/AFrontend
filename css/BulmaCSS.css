@@ -1,254 +1,3 @@
-/*** uncss> filename: HomePage.css ***/
-/*** uncss> filename: HomePage.css ***/
-/* Reset some default styles for consistency */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  font-family: "Tajawal" !important;
-  font-size: medium !important;
-  font-weight: 400 !important;
-}
-
-.remove-right-left-padding {
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
-}
-
-.tajawal {
-  font-family: "Tajawal" !important;
-}
-
-/* Basic styling for the body */
-body {
-  font-family: "Tajawal";
-  font-size: medium;
-  font-weight: 400;
-  /* Add this line to remove the body margin */
-}
-
-.btn-1 {
-  border: 1px solid #0a2237;
-  padding: 0;
-  margin: 0;
-}
-
-.btn-1:active {
-  box-shadow: none;
-  color: white;
-}
-
-.btn-2 {
-  background-color: #0a2237 !important;
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.btn-2:hover {
-  box-shadow: none;
-}
-
-.btn-2:active {
-  box-shadow: none;
-}
-
-#start-icon {
-  margin: 0;
-  padding: 0;
-  /* generate color from here https://isotropic.co/tool/hex-color-to-css-filter/ */
-  filter: invert(100%) sepia(71%) saturate(2%) hue-rotate(28deg)
-    brightness(112%) contrast(101%);
-}
-
-/* Header styling */
-
-.icon-imgs {
-  margin: 2rem;
-  padding: 1.2rem 1.5rem;
-  color: white;
-  fill: white;
-  border-radius: 50%;
-  background-color: #0a2237;
-  max-width: 50%;
-  max-height: 50%;
-  /* This creates a square based on the width */
-  object-fit: contain;
-  display: inline-block;
-}
-
-/* Container for the main content */
-
-.content > img {
-  max-width: 50%;
-  max-height: 50%;
-}
-
-/* Styling for the main content area */
-.content {
-  /* background-color: #fff; */
-  text-align: center;
-  padding: 1rem;
-  margin: 2rem;
-  align-content: center;
-  align-items: center;
-  color: #0a2237;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-  .content {
-    padding: 10px;
-  }
-}
-
-.text-largest {
-  font-size: 3rem;
-}
-
-.text-larger {
-  font-size: 2rem;
-}
-
-.text-large {
-  font-size: 1.5rem;
-}
-
-.text-bold {
-  font-weight: 900;
-}
-
-.text-semibold {
-  font-weight: 500;
-}
-
-#bold {
-  font-weight: 900;
-}
-
-.text-blue {
-  color: #4493d0;
-}
-
-.uni-logo {
-  border: 2px solid #5ac3b5;
-  border-radius: 20%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
-
-.custom-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 5rem;
-}
-
-@media (max-width: 1000px) {
-  .custom-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .custom-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
-  }
-}
-
-.img-layout {
-  width: 70%;
-  height: 70%;
-  max-width: 70%;
-  max-height: 70%;
-  object-fit: contain;
-}
-
-.dropdown {
-  position: relative;
-  display: inline;
-  font-family: "Tajawal";
-  text-align: start;
-  transition: margin-bottom 0.7s ease;
-}
-
-.dropdown button {
-  background-color: #e0f4f2;
-  color: #0a182f;
-  border: none;
-  border-radius: 1rem;
-  width: 60rem;
-  padding: 1rem;
-  text-align: center;
-  cursor: pointer;
-  text-align: start;
-  font-family: "Tajawal";
-}
-
-.dropdown .dropdown-content {
-  display: block;
-  opacity: 0;
-  /* Initial state is invisible */
-  visibility: hidden;
-  /* Hide the content initially */
-  transition: opacity 0.8s ease, visibility 0.8s;
-  background-color: #e0f4f2;
-  right: 0;
-  z-index: 1;
-  border-radius: 1rem;
-  top: 100%;
-  width: 60rem;
-  position: absolute;
-  left: 0;
-}
-
-.dropdown:hover {
-  margin-bottom: 5rem;
-}
-
-@media (max-width: 1000px) {
-  .dropdown button,
-  .dropdown .dropdown-content {
-    width: 40rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .dropdown button,
-  .dropdown .dropdown-content {
-    width: 25rem;
-  }
-
-  .dropdown:hover {
-    margin-bottom: 10rem;
-  }
-}
-
-.dropdown .dropdown-content div {
-  padding: 10px;
-  border-radius: 1rem;
-  text-align: center;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-
-/*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
-/* Bulma Utilities */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 .button {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -320,6 +69,10 @@ html {
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
+}
+
+footer {
+  display: block;
 }
 
 body,
@@ -597,6 +350,13 @@ img {
   padding: 0.75rem;
 }
 
+@media screen and (max-width: 768px) {
+  .column.is-1-mobile {
+    flex: none;
+    width: 8.33333%;
+  }
+}
+
 @media screen and (min-width: 769px), print {
   .column.is-half {
     flex: none;
@@ -607,12 +367,28 @@ img {
     flex: none;
     width: 33.3333%;
   }
+
+  .column.is-one-quarter {
+    flex: none;
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .column.is-5-desktop {
+    flex: none;
+    width: 41.66667%;
+  }
 }
 
 .columns {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
   margin-top: -0.75rem;
+}
+
+.columns:last-child {
+  margin-bottom: -0.75rem;
 }
 
 .columns:not(:last-child) {
@@ -648,8 +424,26 @@ img {
   padding-right: var(--columnGap);
 }
 
+@media screen and (max-width: 768px) {
+  .columns.is-variable.is-1-mobile {
+    --columnGap: 0.25rem;
+  }
+}
+
 @media screen and (min-width: 769px), print {
   .columns.is-variable.is-1-tablet {
+    --columnGap: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .columns.is-variable.is-1-desktop {
+    --columnGap: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .columns.is-variable.is-1-widescreen {
     --columnGap: 0.25rem;
   }
 }
@@ -691,6 +485,10 @@ img {
 }
 
 /* Bulma Helpers */
+
+.is-justify-content-right {
+  justify-content: right !important;
+}
 
 .m-1 {
   margin: 0.25rem !important;
@@ -780,4 +578,9 @@ img {
   .section {
     padding: 3rem 3rem;
   }
+}
+
+.footer {
+  background-color: #fafafa;
+  padding: 3rem 1.5rem 6rem;
 }
