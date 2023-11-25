@@ -19,7 +19,7 @@
 }
 
 .accordion:after {
-  content: "\002B";
+  content: "\2304";
   color: #777;
   font-weight: bold;
   float: left;
@@ -27,7 +27,7 @@
 }
 
 .accordion.active:after {
-  content: "\2212";
+  content: "\2303";
 }
 
 .panel {
