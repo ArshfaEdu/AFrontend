@@ -1,3 +1,45 @@
+.accordion {
+  background-color: #e0f4f2;
+  color: #0a182f;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  transition: 0.4s;
+  font-family: "Tajawal";
+  border-radius: 1rem;
+}
+
+.active,
+.accordion:hover {
+  background-color: #cee1df;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: left;
+  margin-left: 0.25rem;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 1rem;
+  background-color: #e0f4f2;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 0 0 2rem 2rem;
+  margin-bottom: 10px;
+}
+
 .button {
   -moz-appearance: none;
   -webkit-appearance: none;
