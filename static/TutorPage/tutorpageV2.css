@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Tajawal" !important;
+  font-size: medium !important;
+  font-weight: 400 !important;
+}
+
+.remove-right-left-padding {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+.tajawal {
+  font-family: "Tajawal" !important;
+}
+
+/* Basic styling for the body */
+body {
+  font-family: "Tajawal";
+  font-size: medium;
+  font-weight: 400;
+  /* Add this line to remove the body margin */
+}
+
+.black-svg {
+  filter: invert(0%) sepia(25%) saturate(7465%) hue-rotate(85deg)
+    brightness(101%) contrast(93%) !important;
+}
+
+.btn-1 {
+  background-color: #0a2237 !important;
+  color: white !important;
+  border: 1px solid #0a2237;
+  padding: 0;
+  margin: 0;
+}
+
+.dark-blue {
+  background-color: #0a2237;
+  color: white;
+}
+
+.btn-1:active {
+  box-shadow: none;
+  color: white !important;
+}
+
+.btn-2 {
+  color: #0a2237 !important;
+  background-color: white !important;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-2:hover {
+  box-shadow: none;
+}
+
+.btn-2:active {
+  box-shadow: none;
+}
+
+#start-icon {
+  margin: 0;
+  padding: 0;
+  /* generate color from here https://isotropic.co/tool/hex-color-to-css-filter/ */
+  filter: invert(100%) sepia(71%) saturate(2%) hue-rotate(28deg)
+    brightness(112%) contrast(101%);
+}
+
+/* Header styling */
+
+.icon-imgs {
+  margin: 2rem;
+  padding: 1.2rem 1.5rem;
+  color: white;
+  fill: white;
+  border-radius: 50%;
+  background-color: #0a2237;
+  max-width: 50%;
+  max-height: 50%;
+  /* This creates a square based on the width */
+  object-fit: contain;
+  display: inline-block;
+}
+
+/* Container for the main content */
+
+.content > img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+/* Styling for the main content area */
+.content {
+  /* background-color: #fff; */
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem;
+  align-content: center;
+  align-items: center;
+  color: #0a2237;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .content {
+    padding: 0.5rem;
+    text-align: center;
+    margin: 2rem;
+    align-content: center;
+    align-items: center;
+    color: #0a2237;
+  }
+}
+
+.text-largest {
+  font-size: 3rem;
+}
+
+.text-larger {
+  font-size: 2rem;
+}
+
+.text-large {
+  font-size: 1.5rem;
+}
+
+.text-bold {
+  font-weight: 900;
+}
+
+.text-semibold {
+  font-weight: 500;
+}
+
+#bold {
+  font-weight: 900;
+}
+
+.text-blue {
+  color: #4493d0;
+}
+
+.img-layout {
+  width: 70%;
+  height: 70%;
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+.dropdown {
+  position: relative;
+  display: inline;
+  font-family: "Tajawal";
+  text-align: start;
+  transition: margin-bottom 0.7s ease;
+}
+
+.dropdown button {
+  background-color: #e0f4f2;
+  color: #0a182f;
+  border: none;
+  border-radius: 1rem;
+  width: 60rem;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  text-align: start;
+  font-family: "Tajawal";
+}
+
+.dropdown .dropdown-content {
+  display: block;
+  opacity: 0;
+  /* Initial state is invisible */
+  visibility: hidden;
+  /* Hide the content initially */
+  transition: opacity 0.8s ease, visibility 0.8s;
+  background-color: #e0f4f2;
+  right: 0;
+  z-index: 1;
+  border-radius: 1rem;
+  top: 100%;
+  width: 60rem;
+  position: absolute;
+  left: 0;
+}
+
+.dropdown:hover {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 1000px) {
+  .dropdown button,
+  .dropdown .dropdown-content {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown button,
+  .dropdown .dropdown-content {
+    width: 20rem;
+  }
+
+  .dropdown:hover {
+    margin-bottom: 12rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .dropdown button,
+  .dropdown .dropdown-content {
+    width: 15rem;
+  }
+
+  .dropdown:hover {
+    margin-bottom: 12rem;
+  }
+}
+
+.dropdown .dropdown-content div {
+  padding: 10px;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
