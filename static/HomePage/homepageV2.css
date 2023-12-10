@@ -28,13 +28,11 @@ body {
 }
 
 .black-svg {
-  filter: invert(0%) sepia(25%) saturate(7465%) hue-rotate(85deg)
-    brightness(101%) contrast(93%) !important;
+  filter: invert(0%) sepia(25%) saturate(7465%) hue-rotate(85deg) brightness(101%) contrast(93%) !important;
 }
 
 .black-svg {
-  filter: invert(0%) sepia(25%) saturate(7465%) hue-rotate(85deg)
-    brightness(101%) contrast(93%) !important;
+  filter: invert(0%) sepia(25%) saturate(7465%) hue-rotate(85deg) brightness(101%) contrast(93%) !important;
 }
 
 .btn-1 {
@@ -51,9 +49,9 @@ body {
 }
 
 .black-svg {
-  filter: invert(0%) sepia(25%) saturate(7465%) hue-rotate(85deg)
-    brightness(101%) contrast(93%) !important;
+  filter: invert(0%) sepia(25%) saturate(7465%) hue-rotate(85deg) brightness(101%) contrast(93%) !important;
 }
+
 .btn-2 {
   color: #0a2237 !important;
   background-color: white !important;
@@ -73,15 +71,14 @@ body {
   margin: 0;
   padding: 0;
   /* generate color from here https://isotropic.co/tool/hex-color-to-css-filter/ */
-  filter: invert(100%) sepia(71%) saturate(2%) hue-rotate(28deg)
-    brightness(112%) contrast(101%);
+  filter: invert(100%) sepia(71%) saturate(2%) hue-rotate(28deg) brightness(112%) contrast(101%);
 }
 
 /* Header styling */
 
 .icon-imgs {
   margin: 2rem;
-  padding: 1.2rem 1.5rem;
+  padding: 1.5rem;
   color: white;
   fill: white;
   border-radius: 50%;
@@ -95,7 +92,7 @@ body {
 
 /* Container for the main content */
 
-.content > img {
+.content>img {
   max-width: 50%;
   max-height: 50%;
 }
@@ -137,15 +134,15 @@ body {
 
 @media (max-width: 768px) {
   .text-largest {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .text-larger {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .text-large {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -246,6 +243,7 @@ body {
 }
 
 @media (max-width: 1000px) {
+
   .dropdown button,
   .dropdown .dropdown-content {
     width: 40rem;
@@ -253,6 +251,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .dropdown button,
   .dropdown .dropdown-content {
     width: 20rem;
@@ -264,6 +263,7 @@ body {
 }
 
 @media (max-width: 400px) {
+
   .dropdown button,
   .dropdown .dropdown-content {
     width: 15rem;
